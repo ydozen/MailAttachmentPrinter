@@ -1,0 +1,16 @@
+#(/etc/systemd/system/mail_processor.service)に設置
+[Unit]
+Description=Mail Processor Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /path/to/mail_processor.py
+WorkingDirectory=/path/to
+User=your_user
+Group=your_group
+Restart=always
+StandardOutput=append:/var/log/mail_processor.log
+StandardError=append:/var/log/mail_processor.log
+
+[Install]
+WantedBy=multi-user.target

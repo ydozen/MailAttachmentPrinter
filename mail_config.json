@@ -1,0 +1,20 @@
+{
+    "check_interval": 300,
+    "delete_after_days": 7,
+    "accounts": [
+      {
+        "server": "imap.example.com",
+        "port": 993, 
+        "email": "user1@example.com",
+        "password": "password123",
+        "save_dir": "/path/to/save/dir1",
+        "printer": "printer_name"
+      },
+      {
+        "server": "imap.othermail.com",
+        "email": "user2@othermail.com",
+        "password": "securepassword",
+        "save_dir": "/path/to/save/dir2"
+      }
+    ]
+  }
